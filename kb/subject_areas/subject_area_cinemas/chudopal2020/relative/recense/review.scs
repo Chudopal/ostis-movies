@@ -1,0 +1,61 @@
+
+sc_node_norole_relation->
+concept_arity;
+nrel_review;;
+
+sc_node_not_relation ->
+calculated_number;
+concept_premie;
+concept_contest;
+concept_pretendeen;
+concept_win;
+concept_object;
+concept_nomination;;
+
+
+
+concept_relation
+=> nrel_inclusion: binary_relation(*
+	=>
+	nrel_inclusion: antisymmetric_relation;
+	nrel_inclusion: symmetric_relation;
+	nrel_inclusion: asymmetric_relation;
+	nrel_inclusion: transitive_relation;
+	nrel_inclusion: antitransitive_relation;
+	nrel_inclusion: antireflexive_relation;
+	nrel_inclusion: reflexive_relation;;
+*);
+nrel_inclusion: oriented_relation;;
+
+nrel_review
+<-
+antireflexive_relation;
+asymmetric_relation;
+oriented_relation;;
+
+nrel_review
+<|-
+antisymmetric_relation;
+symmetric_relation;
+transitive_relation;
+antitransitive_relation;
+reflexive_relation;;
+
+explanation -> ...(*
+	=> nrel_using_constants: {concept_win; concept_nomination};;
+	=> nrel_main_idtf: [Утв. 1 о ревью](*<-lang_ru;;*);;
+	-> rrel_key_sc_element: nrel_review;;
+	<= nrel_sc_text_translation: ...(*->rrel_example: [Моноревью - ревью на одно произвеление](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+*);;
+
+
+
+arity -> ...(*
+<- sc_node_not_relation;;
+-> nrel_review;;
+=> nrel_measurement: 2(*<-calculated_number;;*);;
+*);;
+
+concept_contest -> oscar2019 (*
+	<= nrel_review: Ramie_Malek (*<-concept_human;;*);;
+*);;

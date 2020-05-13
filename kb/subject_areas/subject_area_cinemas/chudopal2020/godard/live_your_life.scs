@@ -1,0 +1,43 @@
+live_your_life
+<- sc_node_not_relation;
+<-concept_film_of_new_french_wave;
+=> nrel_main_producer: godard;
+=> nrel_screenwriter: godard;
+=> nrel_producing_country: France;
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_venice_film_festival;
+=> nrel_main_idtf:
+        [Жить своей жизнью]
+	(* <- lang_ru;;	*);
+	[live your life]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_french_wave;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Жить своей жизнью)](* <- lang_ru;; *);
+		[Desctiption (live_your_life)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[
+История провинциальной девушки, приехавшей покорять Париж, но оказавшейся на его задворках.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The story of a provincial girl who came to conquer Paris, but ended up in its backyards.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Жить своей жизнью)](*<-lang_ru;;*);
+		[Pic. (live your life)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/live_your_life.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

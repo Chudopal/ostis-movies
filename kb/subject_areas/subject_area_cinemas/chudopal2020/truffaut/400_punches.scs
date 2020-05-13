@@ -1,0 +1,42 @@
+400_strokes
+<- sc_node_not_relation;
+<-concept_film_of_new_french_wave;
+=> nrel_main_producer: francois_truffaut;
+=> nrel_screenwriter: francois_truffaut;
+=> nrel_producing_country: France;
+=> nrel_film_critic_rating: 8;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [400 ударов]
+	(* <- lang_ru;;	*);
+	[400 strokes]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_french_wave;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (400 ударов)](* <- lang_ru;; *);
+		[Desctiption (400 strokes](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+  		        -> rrel_example:[О взрослении маленького Антуана.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[About growing up little Antoine.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (400 ударов)](*<-lang_ru;;*);
+		[Pic. (400 strokes](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/400_strokes.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

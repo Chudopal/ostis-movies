@@ -1,0 +1,38 @@
+louis_bunuel
+<- person;
+<- concept_rezeser;
+<- concept_screenwriter;
+<- concept_actor;
+=> nrel_be_awarded: concept_venice_film_festival;
+=> nrel_be_awarded: concept_palm;
+=>nrel_nominee: concept_oscar;
+=> nrel_main_idtf:
+	[Луис Бюнуэль]
+	(* <- lang_ru;;	*);
+	[Louis Bunuel]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Описание (Луис Бюнуэль)](* <- lang_ru;; *);
+		[Desctiption (Louis Bunuel)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Итальянский режиссер.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Italian director.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Луис Бюнуэль)](*<-lang_ru;;*);
+		[Pic. (Louis Bunuel)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://../IMG/bunuel.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

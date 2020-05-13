@@ -1,0 +1,33 @@
+
+sc_node_not_relation-> concept_film_of_italian_neorealism;;
+concept_film_of_italian_neorealism => nrel_main_idtf:[Italian neorealism](*<-lang_en;;*);;
+concept_film_of_italian_neorealism => nrel_main_idtf:[Итальянский неореализм](*<-lang_ru;;*);;
+
+sc_node_not_relation -> definition;
+italian_cinema;
+poetic_realism;;
+
+sc_node_norole_relation-> nrel_using_constants;
+nrel_sc_text_translation;;
+
+sc_node_role_relation->rrel_key_sc_element; rrel_example;;
+
+definition -> ...(*
+=> nrel_using_constants: {italian_cinema; poetic_realism};;
+=> nrel_main_idtf:[Опр.(Итальянский неореализм)](*<-lang_ru;;*);;
+-> rrel_key_sc_element: concept_film_of_italian_neorealism;;
+<= nrel_sc_text_translation: ...(*->rrel_example: [Итальянский неореализм — течение в послевоенном итальянском кинематографе, сложившееся под влиянием поэтического реализма](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+*);;
+
+explanation -> ...(*
+=> nrel_using_constants: {concept_film_of_italian_neorealism};;
+=> nrel_main_idtf:[Утв.1 (О итальянском неореализме)](*<-lang_ru;;*);;
+-> rrel_key_sc_element: concept_film_of_italian_neorealism;;
+<= nrel_sc_text_translation: ...(*->rrel_example: [ «Рим — открытый город» - представительн итальянского неореализма](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+*);;
+
+concept_narrative => nrel_main_idtf: [итальянский кинематограф](*<-lang_ru;;*);;
+concept_narrative => nrel_main_idtf: [italian_cinema](*<-lang_en;;*);;
+
+concept_shooting => nrel_main_idtf: [поэтический реализм](*<-lang_ru;;*);;
+concept_shooting => nrel_main_idtf: [poetic_realism](*<-lang_en;;*);;

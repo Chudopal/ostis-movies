@@ -1,0 +1,30 @@
+
+sc_node_not_relation-> concept_film_of_dogma95;;
+concept_film_of_dogma95 => nrel_main_idtf:[Dogma 95](*<-lang_en;;*);;
+concept_film_of_dogma95 => nrel_main_idtf:[Догма 95](*<-lang_ru;;*);;
+
+sc_node_not_relation -> definition;
+direction_in_cinema;
+lars_von_trier;;
+
+sc_node_norole_relation-> nrel_using_constants;
+nrel_sc_text_translation;;
+
+sc_node_role_relation->rrel_key_sc_element; rrel_example;;
+
+definition -> ...(*
+=> nrel_using_constants: {direction_in_cinema; lars_von_trier};;
+=> nrel_main_idtf:[Опр.(Догма 95)](*<-lang_ru;;*);;
+-> rrel_key_sc_element: concept_film_of_dogma95;;
+<= nrel_sc_text_translation: ...(*->rrel_example: [Догма 95 - направление в кинематографе созданное Ларсом Фон Триером](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+*);;
+
+explanation -> ...(*
+=> nrel_using_constants: {concept_film_of_dogma95};;
+=> nrel_main_idtf:[Утв.1 (О догме 95)](*<-lang_ru;;*);;
+-> rrel_key_sc_element: concept_film_of_dogma95;;
+<= nrel_sc_text_translation: ...(*->rrel_example: [«Догма 95» имеет целью оппонировать «определённым тенденциям» в сегодняшнем кино.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+*);;
+
+concept_narrative => nrel_main_idtf: [Направление в кинематографе](*<-lang_ru;;*);;
+concept_narrative => nrel_main_idtf: [direction_in_cinema](*<-lang_en;;*);;

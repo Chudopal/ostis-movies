@@ -1,0 +1,42 @@
+sky_over_berlin
+<- sc_node_not_relation;
+=> nrel_main_producer: vim_venders;
+=> nrel_screenwriter: vim_venders;
+=> nrel_producing_country: France;
+=> nrel_film_critic_rating: 8;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Небо над Берлином]
+	(* <- lang_ru;;	*);
+	[The sky over Berlin]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_german_wave;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Небо над Берлином)](* <- lang_ru;; *);
+		[Desctiption (The sky over Berlin)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[
+Невидимые людям ангелы фланируют по разделенному стеной Берлину, заглядывая в дома, мысли и души его обитателей.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Invisible to angels, people flander along Berlin, divided by a wall, looking into the homes, thoughts and souls of its inhabitants.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Небо над Берлином)](*<-lang_ru;;*);
+		[Pic. (The sky over Berlin)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/sky_over_berlin.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

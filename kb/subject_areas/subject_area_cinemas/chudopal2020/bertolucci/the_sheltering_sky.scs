@@ -1,0 +1,41 @@
+the_sheltering_sky
+<- sc_node_not_relation;
+=> nrel_main_producer: bertolucci;
+=> nrel_screenwriter: bertolucci;
+=> nrel_producing_country: USA;
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG18;
+=> nrel_be_awarded: concept_venice_film_festival;
+=> nrel_main_idtf:
+        [Под покровом небес]
+	(* <- lang_ru;;	*);
+	[The Sheltering sSky]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_italian_neorealism;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Под покровом небес)](* <- lang_ru;; *);
+		[Desctiption (The Sheltering Sky)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Последствия измены жены буду ужасны.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The consequences of his wife's betrayal will be terrible.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Под покровом небес)](*<-lang_ru;;*);
+		[Pic. (The Sheltering Sky)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/the_sheltering_sky.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

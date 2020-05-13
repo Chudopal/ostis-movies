@@ -1,0 +1,41 @@
+melancholia
+<- sc_node_not_relation;
+=> nrel_main_producer: lars_von_trier;
+=> nrel_screenwriter: lars_von_trier;
+=> nrel_producing_country:Denmark;
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Меланхолия]
+	(* <- lang_ru;;	*);
+	[Melancholia]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_dogma95;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Меланхолия)](* <- lang_ru;; *);
+		[Desctiption (Melancholia)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[ Рушится мир как внутри главного героя так и снаружи.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[ The world is collapsing both inside the protagonist and outside.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Меланхолия)](*<-lang_ru;;*);
+		[Pic. (Melancholia)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/Melancholia.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

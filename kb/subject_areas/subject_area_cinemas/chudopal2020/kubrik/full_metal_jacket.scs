@@ -1,0 +1,41 @@
+full_metal_jacked
+<- sc_node_not_relation;
+=> nrel_main_producer: stanley_kubrick;
+=> nrel_screenwriter: stanley_kubrick;
+=> nrel_producing_country: USA;
+=> nrel_film_critic_rating: 8;
+=> nrel_age_limit: PG18;
+=> nrel_be_awarded: concept_oscar;
+=> nrel_main_idtf:
+        [Цельнометаллическая оболочка]
+	(* <- lang_ru;;	*);
+	[Full Metal Jacked]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_holywood;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (2001 год: Космическая одиссея)](* <- lang_ru;; *);
+		[Desctiption (Цельнометаллическая оболочка](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Познать все ужасы вьетнамской войны.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[To know all the horrors of the Vietnam war.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Цельнометаллическая оболочка)](*<-lang_ru;;*);
+		[Pic. (Full Metal Jacked](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/full_metal_jacked.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

@@ -1,0 +1,41 @@
+nymphomaniac
+<- sc_node_not_relation;
+=> nrel_main_producer: lars_von_trier;
+=> nrel_screenwriter: lars_von_trier;
+=> nrel_producing_country:Denmark;
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG18;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Нимфоманка]
+	(* <- lang_ru;;	*);
+	[Nymphomaniac]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_dogma95;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Нимфоманка)](* <- lang_ru;; *);
+		[Desctiption (Nymphomaniac)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Главный герой пытается познать мир через острые ощущения.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The main character is trying to know the world through a thrill.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Нимфоманка)](*<-lang_ru;;*);
+		[Pic. (Nymphomaniac)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/Nymphomaniac.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

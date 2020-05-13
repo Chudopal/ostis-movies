@@ -1,0 +1,42 @@
+contempt
+<- sc_node_not_relation;
+<-concept_film_of_new_french_wave;
+=> nrel_main_producer: godard;
+=> nrel_screenwriter: godard;
+=> nrel_producing_country: France;
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Презрение]
+	(* <- lang_ru;;	*);
+	[Contempt]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_french_wave;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Презрение)](* <- lang_ru;; *);
+		[Desctiption (Contempt)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Презрение дамы к своему мужу.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Ladies contempt for her husband.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Презрение)](*<-lang_ru;;*);
+		[Pic. (Contempt)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/contempt.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

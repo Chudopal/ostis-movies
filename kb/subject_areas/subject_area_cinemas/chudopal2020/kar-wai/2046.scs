@@ -1,0 +1,42 @@
+love_mood
+<- sc_node_not_relation;
+=> nrel_main_producer: wong_kar_wai;
+=> nrel_screenwriter: wong_kar_wai;
+=> nrel_producing_country: Hongkong;
+=> nrel_film_critic_rating: 8;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [2046]
+	(* <- lang_ru;;	*);
+	[2046]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_korean_wave;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (2046)](* <- lang_ru;; *);
+		[Desctiption (2046)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[
+Писатель думал, что пишет о будущем, а на самом деле писал о прошлом.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The writer thought he was writing about the future, but actually writing about the past..](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (2046)](*<-lang_ru;;*);
+		[Pic. (2046](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/2046.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

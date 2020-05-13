@@ -1,0 +1,41 @@
+last_imperator
+<- sc_node_not_relation;
+=> nrel_main_producer: bertolucci;
+=> nrel_screenwriter: bertolucci;
+=> nrel_producing_country: France;
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG18;
+=> nrel_be_awarded: concept_oscar;
+=> nrel_main_idtf:
+        [Последний император]
+	(* <- lang_ru;;	*);
+	[The last Emperor]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_italian_neorealism;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Последний император)](* <- lang_ru;; *);
+		[Desctiption (The last Emperor)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[История трехлетнего императора Китая.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The story of the three-year-old emperor of China.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Последний император)](*<-lang_ru;;*);
+		[Pic. (The last Emperor)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/last_imperator.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

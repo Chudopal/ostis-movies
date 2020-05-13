@@ -1,0 +1,39 @@
+stanley_kubrick
+<- person;
+<- concept_rezeser;
+<- concept_screenwriter;
+<- concept_actor;
+=> nrel_be_awarded: concept_venice_film_festival;
+=> nrel_be_awarded: concept_palm;
+=> nrel_be_awarded: concept_oscar;
+=>nrel_nominee: concept_silver_bear;
+=> nrel_main_idtf:
+	[Стэнли Кубрик]
+	(* <- lang_ru;;	*);
+	[Stanley Kubrick]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Описание (Стэнли Кубрик)](* <- lang_ru;; *);
+		[Desctiption (Stanley Kubrick)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Британский режиссер.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[British director.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Стэнли Кубрик)](*<-lang_ru;;*);
+		[Pic. (Stanley Kubrick)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+  		->"file://../IMG/kubrick.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

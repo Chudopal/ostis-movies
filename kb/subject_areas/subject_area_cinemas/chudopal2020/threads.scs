@@ -1,0 +1,22 @@
+concept_janres
+->concept_film_of_avangard;
+->concept_film_of_dogma95;
+->concept_film_of_new_german_wave;
+->concept_film_of_italian_neorealism;
+->concept_film_of_new_korean_wave;
+->concept_film_of_new_french_wave;
+->concept_film_of_new_holywood;
+=> nrel_main_idtf:
+        [Направление]
+	(* <- lang_ru;;	*);
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Направление)](* <- lang_ru;; *);
+		[Desctiption (The Tree of Life)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Направление - обощенное понятие, обозначающее некоторые критерии, которому принадлежит большенство фильмов данного направления.](* <- lang_ru;; => nrel_format: format_html;;*);;
+		*);;
+*);;

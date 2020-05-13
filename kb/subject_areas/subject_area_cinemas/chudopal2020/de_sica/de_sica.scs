@@ -1,0 +1,38 @@
+vittorio_de_sica
+<- person;
+<- concept_rezeser;
+<- concept_screenwriter;
+<- concept_actor;
+=> nrel_be_awarded: concept_venice_film_festival;
+=> nrel_be_awarded: concept_palm;
+=>nrel_nominee: concept_silver_bear;
+=> nrel_main_idtf:
+	[Витторио Де Сика]
+	(* <- lang_ru;;	*);
+	[Vittorio De Sica]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Описание (Витторио Де Сика)](* <- lang_ru;; *);
+		[Desctiption (Vittorio De Sica)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Итальянский режиссер.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Italian director.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Витторио Де Сика)](*<-lang_ru;;*);
+		[Pic. (Vittorio De Sica)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://../IMG/vittorio_de_sica.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

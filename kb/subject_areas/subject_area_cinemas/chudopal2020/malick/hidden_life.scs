@@ -1,0 +1,41 @@
+hidden_life
+<- sc_node_not_relation;
+=> nrel_main_producer: terrence_malick;
+=> nrel_screenwriter: terrence_malick;
+=> nrel_producing_country: USA;
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Тайная Жизнь]
+	(* <- lang_ru;;	*);
+	[A Hidden Life]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_holywood;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Тайная Жизнь)](* <- lang_ru;; *);
+		[Desctiption (A Hidden Life)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[История символа австрийского сопротивления, Франца Егерштеттера.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The story of the symbol of Austrian resistance, Franz Jägerstätter.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Тайная Жизнь)](*<-lang_ru;;*);
+		[Pic. (A Hidden Life)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/hidden_life.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

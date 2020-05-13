@@ -1,0 +1,41 @@
+chung_hing_sam_lam
+<- sc_node_not_relation;
+=> nrel_main_producer: wong_kar_wai;
+=> nrel_screenwriter: wong_kar_wai;
+=> nrel_producing_country: Hongkong;
+=> nrel_film_critic_rating: 8;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Чунгкингский экспресс]
+	(* <- lang_ru;;	*);
+	[Chung Hing sam lam]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_korean_wave;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Чунгкингский экспресс)](* <- lang_ru;; *);
+		[Desctiption (Chung Hing sam lam)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[В жизни молодого полицейского внезапно происходят изменения.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Sudden changes in the life of a young policeman.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Чунгкингский экспресс)](*<-lang_ru;;*);
+		[Pic. (Chung Hing sam lam](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/chung_hing_sam_lam.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

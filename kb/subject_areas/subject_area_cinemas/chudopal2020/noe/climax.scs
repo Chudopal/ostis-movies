@@ -1,0 +1,41 @@
+climax
+<- sc_node_not_relation;
+=> nrel_main_producer: gaspar_noe;
+=> nrel_screenwriter: gaspar_noe;
+=> nrel_producing_country:France;   
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG18;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Экстаз]
+	(* <- lang_ru;;	*);
+	[Climax]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_italian_neorealism;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Экстаз)](* <- lang_ru;; *);
+		[Desctiption (Climax)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Танец - это наркотик. От него и зависят главные герои.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Dance is a drug. The main characters depend on him.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Экстаз)](*<-lang_ru;;*);
+		[Pic. (Climax)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/Climax.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

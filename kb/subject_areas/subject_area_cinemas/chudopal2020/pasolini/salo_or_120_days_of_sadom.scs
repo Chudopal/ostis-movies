@@ -1,0 +1,41 @@
+salo_or_120_days_of_sadom
+<- sc_node_not_relation;
+=> nrel_main_producer: lars_von_trier;
+=> nrel_screenwriter: lars_von_trier;
+=> nrel_producing_country:Denmark;
+=> nrel_film_critic_rating: 5;
+=> nrel_age_limit: PG18;
+=> nrel_be_awarded: concept_venice_film_festival;
+=> nrel_main_idtf:
+        [Сало или 120 дней Садома]
+	(* <- lang_ru;;	*);
+	[Salo or 120 days of Sadom]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_italian_neorealism;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Сало или 120 дней садома)](* <- lang_ru;; *);
+		[Desctiption (Salo or 120 days of Sadom)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Немцы прячутся от войны и издеваются над более низкой кастой людей в Италии.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Germans hide from war and scoff at lower caste of people in Italy](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Сало или 120 дней Садома)](*<-lang_ru;;*);
+		[Pic. (Salo or 120 days of Sadom)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/salo.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

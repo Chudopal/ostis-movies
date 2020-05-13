@@ -1,0 +1,38 @@
+godard
+<- person;
+<- concept_rezeser;
+<- concept_screenwriter;
+<- concept_actor;
+=> nrel_be_awarded: concept_venice_film_festival;
+=> nrel_be_awarded: concept_palm;
+=>nrel_nominee: concept_silver_bear;
+=> nrel_main_idtf:
+	[Жан-Люк Годар]
+	(* <- lang_ru;;	*);
+	[Jean-Luc Godard]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Описание (Жан-Люк Годар)](* <- lang_ru;; *);
+		[Desctiption (Jean-Luc Godard)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Французский режиссер.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[French director.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Жан-Люк Годар)](*<-lang_ru;;*);
+		[Pic. (Jean-Luc Godard)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://../IMG/godard.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

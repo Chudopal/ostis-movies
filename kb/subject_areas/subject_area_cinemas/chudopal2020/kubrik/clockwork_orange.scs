@@ -1,0 +1,41 @@
+clockwork_orange
+<- sc_node_not_relation;
+=> nrel_main_producer: stanley_kubrick;
+=> nrel_screenwriter: stanley_kubrick;
+=> nrel_producing_country: USA;
+=> nrel_film_critic_rating: 8;
+=> nrel_age_limit: PG18;
+=> nrel_be_awarded: concept_oscar;
+=> nrel_main_idtf:
+        [Заводной апельсин]
+	(* <- lang_ru;;	*);
+	[A clockwork orange]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_holywood;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Заводной апельсин)](* <- lang_ru;; *);
+		[Desctiption (A clockwork orange](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Приносит ли социальное дистанцирование пользу.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Does social distance benefit.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Заводной апельсин)](*<-lang_ru;;*);
+		[Pic. (A clockwork orange](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/clockwork_orange.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

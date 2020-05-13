@@ -1,0 +1,42 @@
+dr_strangelove
+<- sc_node_not_relation;
+=> nrel_main_producer: stanley_kubrick;
+=> nrel_screenwriter: stanley_kubrick;
+=> nrel_producing_country: USA;
+=> nrel_film_critic_rating: 8;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Доктор Стрэнджлав или как я перестал бояться и полюбил атомную бомбу]
+	(* <- lang_ru;;	*);
+	[Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+=> nrel_metagenre: concept_comedy;
+<-concept_film_of_new_holywood;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (2001 год: Космическая одиссея)](* <- lang_ru;; *);
+		[Desctiption (Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Мир на пороге атомной войны.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[World on the verge of nuclear war.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (2001 год: Космическая одиссея)](*<-lang_ru;;*);
+		[Pic. (Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/dr_strangelove.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

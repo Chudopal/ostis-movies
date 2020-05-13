@@ -1,0 +1,39 @@
+bertolucci
+<- person;
+<- concept_rezeser;
+<- concept_screenwriter;
+<- concept_actor;
+=> nrel_be_awarded: concept_venice_film_festival;
+=> nrel_be_awarded: concept_palm;
+=> nrel_be_awarded: concept_oscar;
+=>nrel_nominee: concept_silver_bear;
+=> nrel_main_idtf:
+	[Бернардо Бертолуччи]
+	(* <- lang_ru;;	*);
+	[Bernardo Bertolucci]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+		[Описание (Бернардо Бертолуччи)](* <- lang_ru;; *);
+		[Desctiption (Bernardo Bertolucci)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Итальянский режиссер.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Italian director.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Бернардо Бертолуччи)](*<-lang_ru;;*);
+		[Pic. (Bernardo Bertolucci)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+			->"file://../IMG/bertolucci.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

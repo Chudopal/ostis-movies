@@ -1,0 +1,41 @@
+antichrist
+<- sc_node_not_relation;
+=> nrel_main_producer: lars_von_trier;
+=> nrel_screenwriter: lars_von_trier;
+=> nrel_producing_country:Denmark;
+=> nrel_film_critic_rating: 6;
+=> nrel_age_limit: PG18;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Антихрист]
+	(* <- lang_ru;;	*);
+	    [Antichrist]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_dogma95;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Антихрист)](* <- lang_ru;; *);
+		[Desctiption [Antichrist]](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Показано психологическое расстройство главной героини.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[ The psychological disorder of the main character is shown..](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Антихрист)](*<-lang_ru;;*);
+		[Pic. (Antichrist)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/Antichrist.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

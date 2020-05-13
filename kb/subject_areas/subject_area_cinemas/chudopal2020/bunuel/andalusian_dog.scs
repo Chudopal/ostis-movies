@@ -1,0 +1,41 @@
+andalusian_dog
+<- sc_node_not_relation;
+=> nrel_main_producer: louis_bunuel;
+=> nrel_screenwriter: louis_bunuel;
+=> nrel_producing_country: France;
+=> nrel_film_critic_rating: 6;
+=> nrel_age_limit: PG18;
+=> nrel_be_awarded: concept_oscar;
+=> nrel_main_idtf:
+        [Андалузский пес]
+	(* <- lang_ru;;	*);
+	[Andalusian Dog]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_avangard;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Андалузский пес)](* <- lang_ru;; *);
+		[Desctiption (Andalusian Dog)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Экранизация сна.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Screen adaptation of sleep.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Андалузский пес)](*<-lang_ru;;*);
+		[Pic. (Andalusian Dog)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/andalusian_dog.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

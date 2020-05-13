@@ -1,0 +1,42 @@
+poor_pierrot
+<- sc_node_not_relation;
+<-concept_film_of_new_french_wave;
+=> nrel_main_producer: godard;
+=> nrel_screenwriter: godard;
+=> nrel_producing_country: France;
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Бедный Пьерро]
+	(* <- lang_ru;;	*);
+	[Poor Pierrot]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_french_wave;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Бедный Пьерро)](* <- lang_ru;; *);
+		[Desctiption (Poor Pierrot)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[В центре повествования — клоун, который сражается с рыцарем за обладание прекрасной дамой.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[In the center of the story is a clown who fights with a knight for owning a beautiful lady.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Бедный Пьерро)](*<-lang_ru;;*);
+		[Pic. (Poor Pierrot)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/poor_pierrot.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

@@ -1,0 +1,36 @@
+the_house_that_jack_built
+<- sc_node_not_relation;
+=> nrel_main_producer: lars_von_trier;
+=> nrel_screenwriter: lars_von_trier;
+=> nrel_producing_country:Denmark;
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG18;
+=> nrel_be_awarded: concept_palm;
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_dogma95;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Дом котрый построил Джек)](* <- lang_ru;; *);
+		    [Desctiption (The house that Jack built)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Показано внутреннее состояние серийного убийцы.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Shows the internal state of the serial killer.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Дом который построил Джек)](*<-lang_ru;;*);
+		[Pic. (The house that Jack built)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/the_house_that_jack_built.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

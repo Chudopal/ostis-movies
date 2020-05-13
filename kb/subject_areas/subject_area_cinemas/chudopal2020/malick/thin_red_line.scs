@@ -1,0 +1,41 @@
+thin_red_line
+<- sc_node_not_relation;
+=> nrel_main_producer: terrence_malick;
+=> nrel_screenwriter: terrence_malick;
+=> nrel_producing_country: USA;
+=> nrel_film_critic_rating: 7;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_main_idtf:
+        [Тонкая красная линия]
+	(* <- lang_ru;;	*);
+	[The Thin Red Line]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_holywood;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Тонкая красная линия)](* <- lang_ru;; *);
+		[Desctiption (The Thin Red Line)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[Фильм рассказывает о нескольких месяцах жизни армейского подразделения.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[The film tells about several months of the life of the army unit.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Тонкая красная линия)](*<-lang_ru;;*);
+		[Pic. (The Thin Red Line)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/thin_red_line.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

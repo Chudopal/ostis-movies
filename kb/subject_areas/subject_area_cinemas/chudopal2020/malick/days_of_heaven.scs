@@ -1,0 +1,43 @@
+days_of_heaven
+<- sc_node_not_relation;
+=> nrel_main_producer: terrence_malick;
+=> nrel_screenwriter: terrence_malick;
+=> nrel_producing_country: USA;
+=> nrel_film_critic_rating: 8;
+=> nrel_age_limit: PG13;
+=> nrel_be_awarded: concept_palm;
+=> nrel_be_awarded: concept_oscar;
+=> nrel_main_idtf:
+        [Дни жатвы]
+	(* <- lang_ru;;	*);
+	[Days_of_Heaven]
+	(* <- lang_en;;	*);
+=> nrel_metagenre: concept_arthouse;
+=> nrel_metagenre: concept_drama;
+<-concept_film_of_new_holywood;
+
+<- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:
+	        [Описание (Дни жатвы)](* <- lang_ru;; *);
+		[Desctiption (Days_of_Heaven)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		        -> rrel_example:[
+Тысячи искателей лучшей доли прибывают в начале столетия на плодородные земли Техаса, где уродился невиданный урожай.](* <- lang_ru;; => nrel_format: format_html;;*);;
+			-> rrel_example:[Thousands of seekers of the best share arrive at the beginning of the century in the fertile lands of Texas, where an unprecedented crop.](* <- lang_en;; => nrel_format: format_html;;*);;
+		*);;
+*);
+
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+	        [Рис. (Дни жатвы)](*<-lang_ru;;*);
+		[Pic. (Days_of_Heaven)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	        ->"file://../IMG/days_of_heaven.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

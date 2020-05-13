@@ -1,0 +1,33 @@
+
+sc_node_not_relation-> concept_film_of_avangard;;
+concept_film_of_avangard => nrel_main_idtf:[Avangard](*<-lang_en;;*);;
+concept_film_of_avangard => nrel_main_idtf:[Авангард](*<-lang_ru;;*);;
+
+sc_node_not_relation -> definition;
+comercial_cinematograph;
+experimental_cinematograph;;
+
+sc_node_norole_relation-> nrel_using_constants;
+nrel_sc_text_translation;;
+
+sc_node_role_relation->rrel_key_sc_element; rrel_example;;
+
+definition -> ...(*
+=> nrel_using_constants: {comercial_cinematograph};;
+=> nrel_main_idtf:[Опр.(Авангард)](*<-lang_ru;;*);;
+-> rrel_key_sc_element: concept_film_of_avangard;;
+<= nrel_sc_text_translation: ...(*->rrel_example: [Авангард - направление в развитии кинематографа, возникшее в 1920-х годах во Франции в противовес коммерческому кинематографу.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+*);;
+
+explanation -> ...(*
+=> nrel_using_constants: {experimental_cinematograph};;
+=> nrel_main_idtf:[Утв.1 (Об авангарде)](*<-lang_ru;;*);;
+-> rrel_key_sc_element: concept_film_of_avangard;;
+<= nrel_sc_text_translation: ...(*->rrel_example: [Термин «авангард» иногда используется как синоним понятия «экспериментальный кинематограф»](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+*);;
+
+concept_narrative => nrel_main_idtf: [Коммерческий кинематограф](*<-lang_ru;;*);;
+concept_narrative => nrel_main_idtf: [comercial_cinematograph](*<-lang_en;;*);;
+
+concept_shooting => nrel_main_idtf: [Экспериментальный кинематограф](*<-lang_ru;;*);;
+concept_shooting => nrel_main_idtf: [experimental_cinematograph](*<-lang_en;;*);;
